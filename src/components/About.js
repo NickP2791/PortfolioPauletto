@@ -30,15 +30,17 @@ const About = () => {
           layout='fixed'
         />
         {/* </div> */}
-        <AddSlider>
-          {AboutContent.map((item, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <AboutStatement item={item} />
-              </SwiperSlide>
-            );
-          })}
-        </AddSlider>
+        <div className='content'>
+          <AddSlider>
+            {AboutContent.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <AboutStatement item={item} />
+                </SwiperSlide>
+              );
+            })}
+          </AddSlider>
+        </div>
       </AboutBottom>
     </Container>
   );
@@ -66,9 +68,25 @@ const AboutTop = styled.div`
 
 const AboutBottom = styled.div`
   display: flex;
-  width: 100%;
-  flex: 1;
-  margin-left: min(500px);
+  justify-content: center;
+  width: 47rem;
+  margin: 0;
+  margin-top: 0;
+
+  /* Swiper JS custom css */
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 35%;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper {
+    z-index: 4;
+  }
+
   h3 {
     font-size: calc(2.6vw + 0.9rem);
   }
@@ -85,41 +103,55 @@ const AboutBottom = styled.div`
     flex-grow: 0;
   }
 
-  /* .content {
-    display: flex;
-    flex-direction: column;
-    width: max(740px, 60vw);
-    margin: 1rem 3rem 0 0;
+  .content {
+    width: 55%;
     flex: 1;
-  } */
-
-  p {
-    margin: 0.9rem 2.5rem;
-    font-size: calc(1vw + 0.5rem);
   }
 
-  @media screen and (max-width: 600px) {
-    /* .image {
-      display: none;
-    } */
+  p {
+    margin: 1.3rem auto;
+    padding: 0;
+    font-size: max(1vw + 0.3rem, 1.4rem);
+    max-width: 45ch;
+  }
+
+  @media screen and (max-width: 1200px) {
+    display: block;
+    width: 100%;
+    /* flex: 1; */
+    margin-left: 500px;
+    margin-top: 3rem;
+
+    p {
+      padding: 0 2rem;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    display: flex;
+    margin-left: 0;
+    padding-left: 195px;
+  }
+
+  @media screen and (max-width: 700px) {
+    margin: 0 1rem;
+    padding: 0 0.5rem;
+    font-size: 2rem;
 
     .selfphoto {
       display: none;
     }
 
     p {
-      font-size: calc(1vh + 0.6rem);
+      padding: 0 3rem;
     }
   }
 
-  /* Swiper JS custom css */
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 35%;
-  }
-
-  .swiper {
-    z-index: 4;
+  @media screen and (max-width: 500px) {
+    p {
+      font-size: 1rem;
+      padding: 0 2rem;
+    }
   }
 `;
 export default About;

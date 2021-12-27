@@ -58,7 +58,6 @@ const HeroSection = styled.div`
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  /* top: 8vh; */
   height: 100%;
   width: 100%;
 
@@ -89,9 +88,9 @@ const Container = styled.div`
     display: none;
   }
 
-  @media screen and (max-width: 570px) {
-    margin: 0;
-    top: 5%;
+  @media screen and (max-width: 700px) {
+    // margin: 0;
+    top: 10%;
 
     .selfphoto {
       display: block;
@@ -104,6 +103,10 @@ const Container = styled.div`
     .Photo {
       align-self: center;
       margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 570px) {
+      margin: 0;
+      margin-left: 0;
     }
   } ;
 `;
@@ -121,11 +124,11 @@ const HeroTop = styled.div`
     margin: 0.7em 0;
   }
 
-  @media screen and (max-width: 570px) {
+
     .hero__name {
-      font-size: 2.6rem;
+      font-size: 2.3rem;
     }
-  } ;
+  }
 `;
 
 const HeroBottom = styled.div`
