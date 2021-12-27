@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=Roboto:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #012446;
+  --light: #e0ddcf;
+  --orange: #f26112;
+  --lightblue: #bacefc;
+  --grey: #afaca3;
+  --robo: "Roboto", sans-serif;
+  --rale: "Raleway", sans-serif;
+  --transition: all 0.2s ease-out;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+html,
+body {
+  width: 100vw;
+}
+
+.dark {
+  background-color: var(--dark);
+}
+
+.light {
+  background-color: var(--light);
+}
+
+/* global font styles and colors */
+h1,
+h2,
+h3 {
+  font-family: var(--rale);
+  color: var(--orange);
+  z-index: 5;
+}
+
+h1 {
+  font-size: calc(3vw + 1.3rem);
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: calc(6vw + 0.8rem);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-family: var(--robo);
+}
+
+p,
+label,
+a {
+  font-family: var(--robo);
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.5;
+}
