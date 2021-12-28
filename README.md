@@ -1,6 +1,6 @@
-# Nicolas Pauletto - Front-End Developer Portfolio
+# Nicolas Pauletto Portfolio
 
-![Project Image](project-image-url)
+![Project Image](https://user-images.githubusercontent.com/79706492/147609045-726f1426-d440-4c19-af96-15d678237862.jpg)
 
 > This is a ReadMe template to help save you time and effort.
 
@@ -28,7 +28,7 @@ Portfolio website to showcase my talents as a front-end web developer with deep 
 - SwiperJs
 - GraphQL
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#nicolas-pauletto-portfolio)
 
 ---
 
@@ -43,12 +43,12 @@ Portfolio website to showcase my talents as a front-end web developer with deep 
 ```html
     <p>dummy code</p>
 ```
-[Back To The Top](#read-me-template)
+[Back To The Top](#nicolas-pauletto-portfolio)
 
 ---
 
 ## References
-[Back To The Top](#read-me-template)
+[Back To The Top](#nicolas-pauletto-portfolio)
 
 ---
 
@@ -76,7 +76,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#nicolas-pauletto-portfolio)
 
 ---
 
@@ -85,4 +85,4 @@ SOFTWARE.
 - LinkedIn - [Nicolas Pauletto](https://www.linkedin.com/in/nicolas-pauletto/)
 - Website - [Nicolas Pauletto](https://nicolaspauletto.com)
 
-[Back To The Top](#read-me-template)
+[Back To The Top](#nicolas-pauletto-portfolio)
