@@ -123,12 +123,6 @@ const HeroTop = styled.div`
     width: 90%;
     margin: 0.7em 0;
   }
-
-
-    .hero__name {
-      font-size: 2.3rem;
-    }
-  }
 `;
 
 const HeroBottom = styled.div`
