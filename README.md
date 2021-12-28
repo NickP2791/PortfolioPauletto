@@ -2,7 +2,7 @@
 
 ![Project Image](https://user-images.githubusercontent.com/79706492/147609045-726f1426-d440-4c19-af96-15d678237862.jpg)
 
-> This is a ReadMe template to help save you time and effort.
+> Simple portfolio website built with Gatsby with a Sanity CMS "backend".
 
 ---
 
@@ -10,7 +10,6 @@
 You're sections headers will be used to reference location of destination.
 
 - [Description](#description)
-- [How To Use](#how-to-use)
 - [References](#references)
 - [License](#license)
 - [Author Info](#author-info)
@@ -19,10 +18,11 @@ You're sections headers will be used to reference location of destination.
 
 ## Description
 
-Portfolio website to showcase my talents as a front-end web developer with deep interests in learning new things and ReactJS.
+Portfolio website to showcase my talents as a front-end web developer with deep interests in learning new things and ReactJS. This was my first introduction to myself on Jamstack. Most of all the entries can be edited through Sanity as more skills and abilties evolve. One reason why I chose Gatsby was for speed and SEO.
 
-#### Technologies
+#### Technologies used
 
+- React JS
 - Gatsby JS
 - Sanity.io CMS
 - SwiperJs
@@ -32,22 +32,11 @@ Portfolio website to showcase my talents as a front-end web developer with deep 
 
 ---
 
-## How To Use
-
-#### Installation
-
-
-
-#### API Reference
-
-```html
-    <p>dummy code</p>
-```
-[Back To The Top](#nicolas-pauletto-portfolio)
-
----
-
 ## References
+
+- LinkedIn - [Nicolas Pauletto](https://www.linkedin.com/in/nicolas-pauletto/)
+- Website - [Nicolas Pauletto](https://nicolaspauletto.com)
+- 
 [Back To The Top](#nicolas-pauletto-portfolio)
 
 ---
