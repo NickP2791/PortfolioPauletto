@@ -17,7 +17,7 @@ export const ContactForm = () => {
       <input type='text' name='name' placeholder='Name' required />
       <input
         type='email'
-        pattern="^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+        pattern='^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
         name='reply_to'
         placeholder='Email address'
         required
