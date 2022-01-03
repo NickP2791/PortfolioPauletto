@@ -6,7 +6,7 @@ export const ContactForm = () => {
   return (
     <Wrapper
       name='portfolio-contact'
-      method='post'
+      method='POST'
       netlify-honeypot='bot-field'
       data-netlify='true'>
       <p className='hidden'>
