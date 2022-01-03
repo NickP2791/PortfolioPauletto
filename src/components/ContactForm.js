@@ -5,7 +5,7 @@ import { RiMailSendLine } from "react-icons/ri";
 export const ContactForm = () => {
   return (
     <Wrapper
-      name='portfolio-contact'
+      name='portfolio-form'
       method='POST'
       netlify-honeypot='bot-field'
       data-netlify='true'>
