@@ -58,7 +58,7 @@ const SkillsSection = styled.div`
 
 const SkillsTop = styled.div`
   text-align: center;
-  width: 550px;
+  width: 650px;
 
   @media screen and (max-width: 600px) {
     /* text-align: center; */
@@ -90,11 +90,11 @@ const SkillsTop = styled.div`
   @media screen and (min-width: 1200px) {
     .moveLeft {
       position: absolute;
-      left: -220px;
+      left: -190px;
       bottom: 40%;
       transform: rotate(-90deg);
       max-height: 90vh;
-      font-size: 8rem;
+      /* font-size: 8rem; */
     }
   }
 `;

@@ -18,18 +18,18 @@ const About = () => {
       </AboutTop>
 
       <AboutBottom>
-        {/* <div className='image'> */}
-        <StaticImage
-          className='selfphoto'
-          src='../images/Pauletto.png'
-          alt='My picture'
-          width={900}
-          // aspectRatio={1.3}
-          placeholder='none'
-          loading='eager'
-          layout='fixed'
-        />
-        {/* </div> */}
+        <div className='image'>
+          <StaticImage
+            className='selfphoto'
+            src='../images/Pauletto.png'
+            alt='My picture'
+            width={900}
+            // aspectRatio={1.3}
+            placeholder='none'
+            loading='eager'
+            layout='fixed'
+          />
+        </div>
         <div className='content'>
           <AddSlider>
             {AboutContent.map((item, index) => {
@@ -53,7 +53,7 @@ const Container = styled.div`
   padding-top: 8vh;
   width: 100%;
   height: 100%;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 
 const AboutTop = styled.div`
@@ -68,8 +68,7 @@ const AboutTop = styled.div`
 
 const AboutBottom = styled.div`
   display: flex;
-  justify-content: center;
-  width: 47rem;
+  width: 100%;
   margin: 0;
   margin-top: 0;
 
@@ -99,29 +98,27 @@ const AboutBottom = styled.div`
   }
 
   .image {
-    min-width: 218px;
+    min-width: 140px;
     flex-grow: 0;
   }
 
   .content {
-    width: 55%;
-    flex: 1;
+    width: min(850px, 70%);
+    margin: 0 auto;
   }
 
   p {
     margin: 1.3rem auto;
     padding: 0;
-    font-size: max(1vw + 0.3rem, 1.4rem);
+    font-size: max(1vw + 0.3rem, 1.3rem);
     max-width: 45ch;
   }
 
-  @media screen and (max-width: 1200px) {
-    display: block;
-    width: 100%;
-    /* flex: 1; */
-    margin-left: 500px;
-    margin-top: 3rem;
+  @media screen and (min-width: 1200px) and (max-height: 780px) {
+    margin-left: 6rem;
+  }
 
+  @media screen and (max-width: 1200px) {
     p {
       padding: 0 2rem;
     }
@@ -129,15 +126,19 @@ const AboutBottom = styled.div`
 
   @media screen and (max-width: 900px) {
     display: flex;
-    margin-left: 0;
-    padding-left: 195px;
+    margin: 0 1rem 0 auto;
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     margin: 0 1rem;
     padding: 0 0.5rem;
     font-size: 2rem;
 
+    .content {
+      width: min(95%);
+    }
+
+    .image,
     .selfphoto {
       display: none;
     }

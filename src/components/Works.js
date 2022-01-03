@@ -107,11 +107,11 @@ const TopContainer = styled.div`
   @media screen and (min-width: 1200px) {
     .moveLeft {
       position: absolute;
-      left: -220px;
+      left: -155px;
       bottom: 40%;
       transform: rotate(-90deg);
       max-height: 90vh;
-      font-size: 8rem;
+      /* font-size: 8rem; */
     }
   }
 `;

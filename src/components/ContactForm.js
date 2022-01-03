@@ -1,40 +1,32 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import React from "react";
 import styled from "styled-components";
 import { RiMailSendLine } from "react-icons/ri";
 
 export const ContactForm = () => {
-  const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_9z319j8",
-        "template_gr60p6k",
-        form.current,
-        "user_7VUJYGTLyGKGzuO2NE0Lq"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
-
   return (
-    <Wrapper ref={form} onSubmit={sendEmail}>
-      <input type='text' name='name' placeholder='Name' />
-      <input type='email' name='reply_to' placeholder='Email address' />
-      <input type='text' name='subject' placeholder='Subject' />
-      <textarea name='message' rows='8' placeholder='Your message' />
+    <Wrapper
+      name='contact'
+      method='post'
+      netlify-honeypot='bot-field'
+      data-netlify='true'>
+      <p className='hidden'>
+        <label>
+          Don’t fill this out if you’re human: <input name='bot-field' />
+        </label>
+      </p>
+      <input type='text' name='name' placeholder='Name' required />
+      <input
+        type='email'
+        pattern='^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$'
+        name='reply_to'
+        placeholder='Email address'
+        required
+      />
+      <input type='text' name='subject' placeholder='Subject' required />
+      <textarea name='message' rows='8' placeholder='Your message' required />
+
       <button type='submit'>
-        {/* <input  value='' /> */}{" "}
+        {" "}
         <pre>
           Send Message <RiMailSendLine style={{ fontSize: "1.5rem" }} />
         </pre>
@@ -48,6 +40,11 @@ const Wrapper = styled.form`
   flex-direction: column;
   height: 100%;
   gap: 0.5rem;
+
+  .hidden {
+    visibility: hidden;
+    position: absolute;
+  }
 
   input,
   textarea {

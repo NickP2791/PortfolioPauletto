@@ -30,7 +30,7 @@ const Container = styled.div`
   width: 100%;
   justify-content: center;
   margin: 0 auto;
-  margin-top: 3vh;
+  margin-top: 1vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 1rem;

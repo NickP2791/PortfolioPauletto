@@ -50,7 +50,7 @@ const WorksProject = ({ oneProj }) => {
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: 4.25fr 0.75fr 4fr 1rem auto 1rem;
+  grid-template-columns: 4.25fr 0.75fr 3fr 1rem auto 1rem;
   width: 90%;
   color: white;
 
