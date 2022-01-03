@@ -9,6 +9,7 @@ export const ContactForm = () => {
       method='POST'
       netlify-honeypot='bot-field'
       data-netlify='true'>
+      <input type='hidden' name='form-name' value='portfolio-form' />
       <p className='hidden'>
         <label>
           Don't fill this out if you're human: <input name='bot-field' />
