@@ -17,7 +17,7 @@ export const ContactForm = () => {
       <input type='text' name='name' placeholder='Name' required />
       <input
         type='email'
-        pattern='^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$'
+        pattern="^[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
         name='reply_to'
         placeholder='Email address'
         required
@@ -53,6 +53,12 @@ const Wrapper = styled.form`
     font-size: calc(1vw + 0.5rem);
     padding: 0.3rem 0;
     padding-left: 0.3rem;
+  }
+
+  input:focus,
+  textarea:focus {
+    background: lightyellow;
+    border: 2px solid var(--dark);
   }
 
   button {
