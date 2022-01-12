@@ -11,6 +11,10 @@ const myCustomQueries = {
   l: "(max-width: 1200px)",
 };
 
+const isProd = process.env.NODE_ENV === "production";
+const previewEnabled =
+  (process.env.GATSBY_IS_PREVIEW || "false").toLowerCase() === "true";
+
 module.exports = {
   // Site config
   siteMetadata: {
@@ -25,8 +29,8 @@ module.exports = {
       options: {
         projectId: process.env.SANITY_PROJECT_ID,
         dataset: process.env.SANITY_DATASET,
-        watchMode: false,
-        overlayDrafts: true,
+        watchMode: !isProd, // watchMode only in dev mode
+        overlayDrafts: !isProd || previewEnabled, // drafts in dev & Gatsby Cloud Preview
         token: process.env.SANITY_TOKEN,
       },
     },
