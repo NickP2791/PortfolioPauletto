@@ -24,7 +24,7 @@ export default function Skills() {
   const breakpoints = useBreakpoint();
   const data = useStaticQuery(query);
   const SkillsData = data.columns.nodes;
-  console.log(SkillsData);
+  // console.log(SkillsData);
   return (
     <SkillsSection id='skills'>
       <SkillsTop>

@@ -11,7 +11,7 @@ const WorksProject = ({ oneProj }) => {
   // convert skills array to string separated by bullets
   const skillArr = () => {
     const arr = skills.map((skill) => skill.title);
-    console.log(arr);
+    // console.log(arr);
     return arr.toString().split(",").join("\xa0\xa0\u2022\xa0\xa0");
   };
 

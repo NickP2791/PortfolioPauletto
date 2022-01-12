@@ -8,7 +8,7 @@ import { Link } from "gatsby";
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
-  console.log(showMenu);
+  // console.log(showMenu);
   // to: need to match the ids for each declared in Wrapper for each page component
   const menuitems = [
     { to: "#about", title: "About" },
@@ -65,7 +65,13 @@ const Wrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  background-color: var(--dark);
+  background: rgb(1, 36, 70);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 36, 70, 1) 0%,
+    rgba(0, 51, 102, 1) 48%
+  );
+  /* background-color: var(--dark); */
   top: 0;
   /* left: 0;
   right: 0; */

@@ -1,8 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import { RiMailSendLine } from "react-icons/ri";
+import { useBreakpoint } from "gatsby-plugin-breakpoints";
 
 export const ContactForm = () => {
+  const breakpoints = useBreakpoint();
+  const textAreaHeight = breakpoints.sm ? 4 : 8;
   return (
     <Wrapper
       name='portfolio-form'
@@ -24,7 +27,12 @@ export const ContactForm = () => {
         required
       />
       <input type='text' name='subject' placeholder='Subject' required />
-      <textarea name='message' rows='8' placeholder='Your message' required />
+      <textarea
+        name='message'
+        rows={textAreaHeight}
+        placeholder='Your message'
+        required
+      />
 
       <button type='submit'>
         {" "}
@@ -39,8 +47,8 @@ export const ContactForm = () => {
 const Wrapper = styled.form`
   display: flex;
   flex-direction: column;
-  height: 100%;
-  gap: 0.5rem;
+  /* height: 100%; */
+  gap: 0.7rem;
 
   .hidden {
     visibility: hidden;
@@ -54,6 +62,12 @@ const Wrapper = styled.form`
     font-size: calc(1vw + 0.5rem);
     padding: 0.3rem 0;
     padding-left: 0.3rem;
+    border-radius: 5px;
+
+    //shadow
+    -moz-box-shadow: 7px 6px 5px 2px var(--dark);
+    -webkit-box-shadow: 7px 6px 5px 2px var(--dark);
+    box-shadow: 7px 6px 5px 2px var(--dark);
   }
 
   input:focus,
@@ -63,8 +77,8 @@ const Wrapper = styled.form`
   }
 
   button {
-    background-color: var(--orange);
-    color: var(--dark);
+    background-color: var(--dark);
+    color: var(--light);
     font-weight: bold;
     align-self: center;
     font-size: 1.3rem;
@@ -79,6 +93,8 @@ const Wrapper = styled.form`
   }
 
   @media screen and (max-width: 600px) {
+    gap: 0.3rem;
+
     button {
       align-self: flex-start;
     }

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const SkillListItem = styled.h4`
-  background: #aba89f;
+  background: var(--grey);
   padding: 0.3rem 0.9rem;
   margin: 0.3rem;
   font-family: var(--robo);

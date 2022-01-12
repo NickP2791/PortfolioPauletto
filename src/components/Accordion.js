@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { IoChevronUp, IoChevronDown } from "react-icons/io5";
@@ -21,10 +21,10 @@ const Accordion = ({ SkillsData }) => {
         <Container>
           {SkillsData.map((item) => {
             const { column, title, skills } = item;
-            console.log(column, title, skills);
+            // console.log(column, title, skills);
             return (
-              <>
-                <Wrap onClick={() => toggle(column)} key={column}>
+              <Fragment key={column}>
+                <Wrap onClick={() => toggle(column)}>
                   <h2>{title}</h2>
                   <span>
                     {clicked === column ? <IoChevronUp /> : <IoChevronDown />}
@@ -41,7 +41,7 @@ const Accordion = ({ SkillsData }) => {
                     })}
                   </Dropdown>
                 ) : null}
-              </>
+              </Fragment>
             );
           })}
         </Container>

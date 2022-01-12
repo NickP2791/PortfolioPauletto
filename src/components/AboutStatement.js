@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const AboutStatement = ({ item }) => {
-  console.log(item);
+  // console.log(item);
   return (
     <AboutBlock>
       <h3>{item.title}</h3>

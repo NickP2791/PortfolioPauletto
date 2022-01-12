@@ -3,7 +3,7 @@ import WorksProject from "./WorksProject";
 import styled from "styled-components";
 
 const WorksProjectGrid = ({ allProjects }) => {
-  console.log(allProjects);
+  // console.log(allProjects);
 
   return (
     <ProjectGrid>
