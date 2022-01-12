@@ -59,7 +59,7 @@ const EmailButtonWrap = styled.button`
   p {
     position: absolute;
     color: red;
-    left: -174px;
+    left: -100px;
     opacity: 0;
   }
 `;

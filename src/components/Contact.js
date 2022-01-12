@@ -91,7 +91,7 @@ const ContactTop = styled.div`
 const ContactBottom = styled.div`
   display: grid;
   grid-template-columns: 1.5fr 0.25fr 1.5fr;
-  width: min(850px, 95vw);
+  width: min(950px, 95vw);
   gap: 2rem;
   position: relative;
   margin: 1rem auto;
